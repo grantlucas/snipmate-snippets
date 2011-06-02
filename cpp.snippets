@@ -28,3 +28,23 @@ snippet cl
 	private:
 		${3:/* data */}
 	};
+
+#Function
+snippet fun
+	/**
+	 * @Description: ${1:Description}
+	 * 
+	 * @params $4
+	 * @return $2
+	 */
+	${2:void} `Filename()`::${3:FunctionName}(${4:param})
+	{	
+	  ${5:// code...}
+	}
+
+#Function with no header description
+snippet funb
+	${1:void} `Filename()`::${2:FunctionName}(${3})
+	{	
+	  ${5:// code...}
+	}

@@ -1,12 +1,11 @@
 snippet php
 	<?php
 	${1}
-	?>
 snippet phpo
 	<?php
 	${1}
 snippet phpi
-	<?php ${1} ?>
+	<?php ${1} ?> ${2}
 snippet ec
 	echo "${1:string}"${2};
 snippet inc
@@ -238,9 +237,6 @@ snippet xmp
 	print_r($${1:variable})${2};
 	echo "</xmp>";
 
-snippet /**/
-	/******${1}******/
-
 # Drupal Module doc block
 snippet hook
 	/**
@@ -251,7 +247,7 @@ snippet hookfun
 	/**
 	 * Implmentation of hook_${1:hook_name}();
 	 */
-	function `Filename()`_${2:$1}(${3})
-	{	
+	function `GetFileName()`_${2:$1}(${3})
+	{
 	  ${4:// code...}
 	}

@@ -1,9 +1,12 @@
 #My custom php snippets
 
-#echo xmp snippet added by grant
 snippet xmp
 	echo "<xmp style='background-color: #fff;'>";
-	print_r($${1:variable})${2};
+	print_r($${1:variable});
+	echo "</xmp>";
+snippet xmpv
+	echo "<xmp style='background-color: #fff;'>";
+	var_dump($${1:variable});
 	echo "</xmp>";
 # Drupal Module doc block
 snippet hook
